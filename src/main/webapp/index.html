@@ -1,0 +1,206 @@
+<!--
+Name: Shikhara Akavaram
+GNumber: G01350704
+This is PART-2 of assignment 1. Creating the Mason student survey form using HTML,CSS and BootStrap. This web page allows the user to enter the survey details.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        h1 {outline-color:blue;}
+        h1.outset {outline-style: outset;}
+        .required {color:red; font-size:1em;}
+        .btn-success:active{
+}
+
+
+
+
+    </style>
+</head>
+<body>
+<br>
+<br>
+<div class="container text-center">
+    <h1 class="outset">MASON STUDENT SURVEY FORM</h1>
+</div>
+<br>
+<br>
+<div class="container">
+
+    <form>
+        <div class="form-group row">
+            <label for="firstname" class="col-sm-2 col-form-label">First Name:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="firstname" placeholder="First Name" autofocus=""
+                       required>
+            </div>
+
+        </div>
+
+        <div class="form-group row">
+            <label for="lastname" class="col-sm-2 col-form-label">Last Name:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="lastname" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input3" class="col-sm-2 col-form-label">Street Address:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="input3" placeholder="Address" required>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label for="input4" class="col-sm-2 col-form-label">City:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="input4" placeholder="Ex:Chantilly" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input5" class="col-sm-2 col-form-label">State:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="input5" placeholder="Ex:Texas" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input6" class="col-sm-2 col-form-label">Zip:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="input6" placeholder="Ex:20151" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input7" class="col-sm-2 col-form-label">Telephone Number:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="input7" placeholder="Ex:571-123-9887" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input8" class="col-sm-2 col-form-label">Email:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="input8" placeholder="Ex:abc@gmail.com" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input9" class="col-sm-2 col-form-label">Date of Survey:<span class="required">*</span></label>
+            <div class="col-sm-10">
+                <input type="date" id="input9" name="date" placeholder="dd-mm-yyyy" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input9" class="col-sm-2 col-form-label">What do you like most about the campus:</label>
+            <div class="col-sm-7">
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    Students
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2">
+
+                    Location
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck3">
+
+                    Campus
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck4">
+
+                    Atmosphere
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck5">
+
+                    Dorm Rooms
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck6">
+
+                    Sports
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input9" class="col-sm-2 col-form-label">How did you hear about us:</label>
+            <div class="col-sm-7">
+                <input type="radio" id="friends" name="heardus" value="friends">
+                Friends
+                <input type="radio" id="television" name="heardus" value="television">
+                Television
+                <br>
+                <input type="radio" id="Internet" name="heardus" value="Internet">
+                Internet
+                <input type="radio" id="others" name="heardus" value="others">
+                Other
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input9" class="col-sm-2 col-form-label">How likely do you Recommend this school to other
+                students:</label>
+            <div class="col-sm-7">
+                <select id="recommendation" name="recommendation">
+                    <option value="Very">Likely</option>
+                    <option value="Likely">Very Likely</option>
+                    <option value="Unlikely">Unlikely</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+
+            <label for="input9" class="col-sm-2 col-form-label">Enter at least ten comma separated numbers ranging from
+                1 through 100 Raffle field:</label>
+
+            <div class="col-sm-7">
+                <input type="firstname" class="form-control" id="input10" placeholder="Ex: 1,2,3,4....">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="input9" class="col-sm-2 col-form-label">Additional Comments: </label>
+            <div class="col-sm-7">
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group row text-center ">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-success">Submit</button>
+                &nbsp &nbsp
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
