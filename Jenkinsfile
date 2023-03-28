@@ -24,8 +24,8 @@ pipeline{
         stage("deploying on k8")
 	{
 		steps{
-			sh 'kubectl set image deployment/shikhara container-0=shikhara1997/studentsurvey645:latest -n default'
-			sh 'kubectl rollout restart deploy shikhara -n default'
+			sh 'kubectl set image deployment/studentpage container-0=shikhara1997/studentsurvey645:latest -n default'
+			sh 'kubectl rollout restart deploy studentpage -n default'
 		}
 	} 
   }
