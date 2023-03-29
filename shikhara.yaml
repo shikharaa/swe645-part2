@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "shikhara"
+  cluster:
+    server: "https://ec2-18-205-160-153.compute-1.amazonaws.com/k8s/clusters/c-9jx9h"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2VENDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      Fk0TURBeApNamc0TlRBZUZ3MHlNekF6TWpneE5ERTBORFZhRncwek16QXpNalV4TkRFME5EVmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE5qZ3dNREV5T0RnMU1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRU83bmljV0VsdE9aTgozZWtBcGovNzY4L0ticjFZQXZhdG94RzhCQ\
+      0tFVGcvMXA1cGtaMGErZWVMNTYxRnB1ZVBWVnZkOEh2SlFCZ2V1CjVxVW0zZkczbUtOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGS\
+      3IzNGRjeEF4Y0hJRmY1ZXRLOWVpRURZOUFPTUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSVFDcgoxK\
+      21EV1JzTW9tOGdrakFncjR0dEhpVzZkcEhaYXc4SWU4UlZPNS84RGdJZ0RiQzJ4UTRLeXc0RTZWU\
+      1ExT2xBCnVVRHpnd2VpVW9DdGt1RW5XdFQzV0tJPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "shikhara"
+  user:
+    token: "kubeconfig-user-8kws5ktvvg:srfp2qntdffcz52k44cnb7kg4v8wfttw99k9fw77hvhtcnphgnqh9s"
+
+
+contexts:
+- name: "shikhara"
+  context:
+    user: "shikhara"
+    cluster: "shikhara"
+
+current-context: "shikhara"

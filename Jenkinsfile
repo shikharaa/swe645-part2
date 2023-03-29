@@ -1,3 +1,5 @@
+//This file with create a CI/CD pipeline for building and deploying the dcoker image to k8 cluster using Github as source control version.
+
 pipeline{
     agent any
     environment {
